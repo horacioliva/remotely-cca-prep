@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Remotely · CCAF Prep — Pass the Claude Certified Architect exam</title>
-<meta name="description" content="Become a Claude Certified Architect through the Remotely network. Whitelisted access to register, exam costs reimbursed. Anthropic's first 5,000 attempts are free until July 15, 2026 — and the only registration path runs through our network.remotely.works domain." />
+<meta name="description" content="Become a Claude Certified Architect through the Remotely network. Whitelisted access to register, exam costs reimbursed. Anthropic's first 5,000 attempts are free until August 31, 2026 — and the only registration path runs through our network.remotely.works domain." />
 <meta name="theme-color" content="#FFFFFF" />
 <!-- Favicon — simple ink dot. Swap with official asset later. -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2314151F'/%3E%3C/svg%3E" />
@@ -323,21 +323,47 @@
   .share-actions { display: flex; gap: var(--s-3); flex-wrap: wrap; }
   .share-actions .btn { font-size: 14px; }
 
-  /* Office hours card */
-  .office-hours {
+  /* Prep materials card */
+  .prep-materials {
     background: linear-gradient(135deg, rgba(80,71,226,0.08), rgba(225,73,137,0.05));
     border: 1px solid rgba(80,71,226,0.18); border-radius: var(--radius-card);
     padding: var(--s-12);
-    display: grid; grid-template-columns: 1fr auto; gap: var(--s-8); align-items: center;
   }
-  @media (max-width: 720px) { .office-hours { grid-template-columns: 1fr; } }
-  .office-hours h2 { margin: 0 0 var(--s-3); }
-  .office-hours p { color: var(--text-dim); margin: 0; font-size: 16px; line-height: 1.55; max-width: 560px; }
-  .office-hours-cta { display: flex; flex-direction: column; align-items: flex-end; gap: var(--s-2); }
-  @media (max-width: 720px) { .office-hours-cta { align-items: flex-start; } }
-  .office-hours-recurrence {
+  .prep-materials-header { margin-bottom: var(--s-8); max-width: 720px; }
+  .prep-materials-eyebrow {
     font-family: var(--font-head); font-size: 12px; color: var(--purple);
     font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .prep-materials h2 { margin: var(--s-2) 0 var(--s-3); }
+  .prep-materials-header p { color: var(--text-dim); margin: 0; font-size: 16px; line-height: 1.55; }
+  .prep-docs {
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-5);
+  }
+  @media (max-width: 720px) { .prep-docs { grid-template-columns: 1fr; } }
+  .prep-doc {
+    display: flex; gap: var(--s-4); align-items: flex-start;
+    background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-card);
+    padding: var(--s-6); text-decoration: none; color: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .prep-doc:hover {
+    border-color: rgba(80,71,226,0.35);
+    box-shadow: 0 4px 24px rgba(80,71,226,0.08);
+  }
+  .prep-doc-icon {
+    flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px;
+    background: rgba(80,71,226,0.1); color: var(--purple);
+    display: grid; place-items: center;
+  }
+  .prep-doc-body { min-width: 0; }
+  .prep-doc-title {
+    font-family: var(--font-head); font-weight: 600; font-size: 16px;
+    color: var(--ink); margin: 0 0 4px;
+  }
+  .prep-doc-desc { color: var(--text-dim); font-size: 14px; line-height: 1.5; margin: 0 0 8px; }
+  .prep-doc-meta {
+    font-family: var(--font-head); font-size: 12px; font-weight: 600;
+    color: var(--purple); letter-spacing: 0.02em;
   }
 
   /* Callout pull-quote */
@@ -444,7 +470,7 @@
       <a href="#pioneers">Architects</a>
       <a href="#reality">Exam reality</a>
       <a href="#path">Study path</a>
-      <a href="#office-hours">Office Hours</a>
+      <a href="#prep">Exam prep</a>
     </div>
     <a class="btn" href="https://weareremotely.typeform.com/to/UCK19Ezl#partner_id=694cb1b6-8dda-4385-a66b-1bac00b54321" target="_blank" rel="noopener">Join the program</a>
   </div>
@@ -455,7 +481,7 @@
   <div class="container">
     <span class="eyebrow-pill">Exclusive eligibility · Remotely network only</span>
     <h1>Become a <span class="grad">Claude Certified Architect</span> — before the door closes.</h1>
-    <p class="lead">Anthropic's first official technical credential for AI architects. Your only registration path runs through Remotely's whitelisted domain. The first 5,000 attempts are free until <strong>July 15, 2026</strong>. We reimburse anything that lands on the paid side of that line.</p>
+    <p class="lead">Anthropic's first official technical credential for AI architects. Your only registration path runs through Remotely's whitelisted domain. The first 5,000 attempts are free until <strong>August 31, 2026</strong>. We reimburse anything that lands on the paid side of that line.</p>
     <div class="cta-row">
       <a class="btn" href="https://weareremotely.typeform.com/to/UCK19Ezl#partner_id=694cb1b6-8dda-4385-a66b-1bac00b54321" target="_blank" rel="noopener">Join the program</a>
       <a class="btn secondary" href="#testimonials">See who passed</a>
@@ -468,7 +494,7 @@
   <div class="container">
     <div class="mechanic-inner">
       <div class="mechanic-tag">How it works</div>
-      <div class="mechanic-text">Your registration path runs through Remotely's whitelisted domain. We reimburse the fee. <span class="mechanic-clock">The clock runs out July 15.</span></div>
+      <div class="mechanic-text">Your registration path runs through Remotely's whitelisted domain. We reimburse the fee. <span class="mechanic-clock">The clock runs out August 31.</span></div>
     </div>
   </div>
 </section>
@@ -482,7 +508,7 @@
       <div class="stat"><div class="v">60</div><div class="l">Questions</div></div>
       <div class="stat"><div class="v">120 min</div><div class="l">Proctored, single attempt</div></div>
       <div class="stat"><div class="v">1 year</div><div class="l">LinkedIn badge validity</div></div>
-      <div class="stat"><div class="v">Jul 15</div><div class="l">Reimbursement deadline</div></div>
+      <div class="stat"><div class="v">Aug 31</div><div class="l">Reimbursement deadline</div></div>
     </div>
   </div>
 </section>
@@ -508,8 +534,8 @@
         <p>Pass the exam, forward the result, add the expense with the receipt to the platform. We reimburse on your next invoice.</p>
       </div>
       <div class="wcard">
-        <h3>Deadline: July 15, 2026</h3>
-        <p>Extended from June 30. Take and pass the exam before the deadline to qualify for full reimbursement. After that, the offer closes.</p>
+        <h3>Deadline: August 31, 2026</h3>
+        <p>Extended from July 15. Take and pass the exam before the deadline to qualify for full reimbursement. After that, the offer closes.</p>
       </div>
       <div class="wcard">
         <h3>First in line for Claude work</h3>
@@ -712,7 +738,7 @@ Thanks to @Remotely Works for opening the door.
         <ol>
           <li>Register at <code>clau.de/CCAF</code> using your <code>@network.remotely.works</code> email — we're a cleared domain.</li>
           <li>Score 900/1000 on the practice exam before booking the real one.</li>
-          <li>Take the proctored exam and pass it before <strong>July 15, 2026</strong>.</li>
+          <li>Take the proctored exam and pass it before <strong>August 31, 2026</strong>.</li>
           <li>Submit your passing certificate and the $99 receipt to Remotely.</li>
           <li>100% reimbursement on your next invoice. No approval gate — pass the exam, get paid back.</li>
         </ol>
@@ -774,18 +800,36 @@ Thanks to @Remotely Works for opening the door.
   </div>
 </section>
 
-<!-- Office Hours -->
-<section id="office-hours">
+<!-- Exam prep materials -->
+<section id="prep">
   <div class="container">
-    <div class="office-hours">
-      <div>
-        <span class="office-hours-recurrence">Live · Weekly</span>
-        <h2 style="margin-top: var(--s-2);">CCAF Office Hours</h2>
-        <p>Weekly study sessions with mentors who've already cleared the exam. Bring your scenario questions, your context-window head-scratchers, your "is this answer right?" reads from the practice exam. Free for everyone — drop in whenever you can.</p>
+    <div class="prep-materials">
+      <div class="prep-materials-header">
+        <span class="prep-materials-eyebrow">Exam prep</span>
+        <h2>How to prepare for the exam</h2>
+        <p>Start with the official Anthropic materials below — the FAQ covers logistics and eligibility, and the Exam Guide walks the domains you'll be tested on. Pair them with the curated resources above, clear Track A, then book the exam.</p>
       </div>
-      <div class="office-hours-cta">
-        <a class="btn" href="https://luma.com/upaj4zmw" target="_blank" rel="noopener">Register on Luma →</a>
-        <small style="color: var(--text-muted); font-size: 12px;">No charge. No sign-up gate. Just show up.</small>
+      <div class="prep-docs">
+        <a class="prep-doc" href="assets/CCA-Foundations-FAQ.pdf" target="_blank" rel="noopener">
+          <div class="prep-doc-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+          </div>
+          <div class="prep-doc-body">
+            <div class="prep-doc-title">CCA Foundations FAQ</div>
+            <p class="prep-doc-desc">Eligibility, registration, reimbursement, and common questions about the Foundations exam.</p>
+            <span class="prep-doc-meta">PDF · Download →</span>
+          </div>
+        </a>
+        <a class="prep-doc" href="assets/CCA-Exam-Guide.pdf" target="_blank" rel="noopener">
+          <div class="prep-doc-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+          </div>
+          <div class="prep-doc-body">
+            <div class="prep-doc-title">CCA Exam Guide</div>
+            <p class="prep-doc-desc">Official domain coverage and what to study before you sit the proctored exam.</p>
+            <span class="prep-doc-meta">PDF · Download →</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -796,7 +840,7 @@ Thanks to @Remotely Works for opening the door.
   <div class="container">
     <div class="cta-block">
       <h2>Some of you are basically ready today.</h2>
-      <p>You know who you are. Weekly study sessions, mentors who already cleared CCAF, and a dedicated community for candidates. Free for everyone on the Remotely network. Let's go.</p>
+      <p>You know who you are. Use the prep materials above, clear Track A, and sit the exam before August 31. Free for everyone on the Remotely network. Let's go.</p>
       <a class="btn" href="https://weareremotely.typeform.com/to/UCK19Ezl#partner_id=694cb1b6-8dda-4385-a66b-1bac00b54321" target="_blank" rel="noopener">Sign up to join →</a>
     </div>
   </div>
@@ -826,7 +870,7 @@ Thanks to @Remotely Works for opening the door.
         <div class="footer-col-h">This program</div>
         <a href="#pioneers">First Architects</a>
         <a href="#path">Study path</a>
-        <a href="#office-hours">Office Hours</a>
+        <a href="#prep">Exam prep</a>
         <a href="#resources">Resources</a>
       </div>
     </div>
